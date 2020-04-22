@@ -1,0 +1,1 @@
+/usr/bin/g++-7  -std=c++17   CMakeFiles/test.dir/test/utest_rp_a_star_search.cpp.o CMakeFiles/route_planner.dir/src/route_planner.cpp.o CMakeFiles/route_planner.dir/src/model.cpp.o CMakeFiles/route_planner.dir/src/route_model.cpp.o  -o test lib/libgtest_main.a ../lib/libpugixml.a lib/libgtest.a -lpthread 
