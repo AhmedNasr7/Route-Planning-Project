@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Route Planning Project
 
 This repo contains the starter code for the Route Planning project.
@@ -59,7 +58,3 @@ The testing executable is also placed in the `build` directory. From within `bui
 ```
 ./test
 ```
-
-=======
-# CppND-Route-Planning-Project
->>>>>>> 1b4bac1c37ff209651180a176382a2c382b8340f
