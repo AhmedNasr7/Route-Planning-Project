@@ -9,10 +9,6 @@ bool compare_node(RouteModel::Node* node1, RouteModel::Node* node2)
 }
 
 
- float pdistance(float x1, float y1, float x2, float y2)  {
-            return std::sqrt(std::pow((x1 - x2), 2) + std::pow((y1- y2), 2));
-        }
-
 RoutePlanner::RoutePlanner(RouteModel &model, float start_x, float start_y, float end_x, float end_y): m_Model(model) {
     // Convert inputs to percentage:
     start_x *= 0.01;
@@ -24,12 +20,8 @@ RoutePlanner::RoutePlanner(RouteModel &model, float start_x, float start_y, floa
     // TODO 2: Use the m_Model.FindClosestNode method to find the closest nodes to the starting and ending coordinates.
     // Store the nodes you find in the RoutePlanner's start_node and end_node attributes.
 
-    auto snode = m_Model.FindClosestNode(start_x, start_y);
-    auto enode = m_Model.FindClosestNode(end_x, end_y);
-
-    this->start_node = &snode;
-    this->end_node = &enode;
-  
+    this->start_node = &m_Model.FindClosestNode(start_x, start_y);
+    this->end_node = &m_Model.FindClosestNode(end_x, end_y);
 
  
 }
